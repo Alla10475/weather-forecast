@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  min-height: 100vh;
+  position: relative;
+}
+
+.app::before {
+  content: '';
+  background: url('./images/bg_img.jpg') no-repeat center center/cover;
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.inp-field {
+  text-align: center;
+  padding: 1rem;
+}
+
+.inp-field input {
+  padding: .7rem 1.5rem;
+  font-size: 1.2rem;
+  border-radius: 15px;
+  border: 1px solid grey;
+  background: rgba(255, 255, 255, 0.5);
+  color: #8f8f8f;
+}
+
+.container {
+  margin-top: 10vh;
+}
+
+.city p {
+  text-align: center;
+  font-style: oblique;
+  font-size: 3rem;
+  color: #ffff;
+}
+
+.temp h1 {
+  text-align: center;
+  color: #ffff;
+  font-size: 7rem;
+}
+
+.descr p {
+color: #ffff;
+font-size: 2rem;
+text-align: center;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.footer {
+  margin: 30vh auto;
+  color:#ffff;
+  background:  rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.feels p, .humidity p, .wind p {
+  text-align: center;
+  font-size: 1.35rem;
+}
